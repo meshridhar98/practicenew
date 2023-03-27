@@ -1,0 +1,9 @@
+public class test1 { 
+ 
+		@Test 
+		public void acti() {
+			ChromeOptions option = new ChromeOptions();
+			option.addArguments("--remote-allow-origins=*");
+			WebDriver driver = new ChromeDriver(option);
+			driver.manage().window().maximize();
+			driver.get("https://www.facebook.com/");
